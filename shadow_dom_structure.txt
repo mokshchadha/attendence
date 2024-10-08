@@ -311,7 +311,7 @@ BODY.ng-tns-0-1
                                       DIV
                                       DIV.author.text-black.pt-1x.uppercase.pb-2x.text-sm.ng-star-inserted
                       DIV.right-view
-                        DIV.image-home-noon
+                        DIV.image-home-evening
                 GT-HOME-BANNER.ng-star-inserted
                   DIV.image-unite-banner.ng-star-inserted
                 DIV.page.page-home.ng-star-inserted
@@ -331,7 +331,7 @@ BODY.ng-tns-0-1
                         DIV.gt-widget-wrapper.bg-white.rounded-m.border-secondary-200.hover:shadow-lg.ng-star-inserted
                           GT-COMPONENT-LOADER
                             GT-ATTENDANCE-INFO.ng-star-inserted
-                              DIV.p-1.5x.h-18x.widget-border.bg-primary-50
+                              DIV.p-1.5x.h-18x.widget-border.bg-white
                                 DIV
                                   DIV.flex.flex-row.justify-between.ng-star-inserted
                                     DIV.flex.flex-col
@@ -465,11 +465,9 @@ BODY.ng-tns-0-1
                                 HEADER
                                   H4.text-secondary-400.text-sm.font-semibold.my-0
                                 DIV.flex.justify-between.flex-wrap.ng-star-inserted
-                                  DIV.cursor-pointer.justify-between.track-item.hover:bg-primary-50.flex.flex-col.mt-1.5x.p-1x.border.border-solid.border-secondary-100.rounded-lg.ng-star-inserted
-                                    DIV.flex.justify-between.mb-0.5x
-                                      SPAN.inline-block.text-secondary-500.text-base.font-semibold
-                                      DIV.w-2.5x.h-2.5x.gt_illustration_35
-                                    SPAN.inline-block.text-secondary-400.text-xs.font-normal
+                                DIV.w-full.flex.items-center.justify-center.flex-col.my-1.5x.ng-star-inserted
+                                  DIV.gt_illustration_2.w-32.h-20
+                                  P.text-secondary-400.text-center.text-sm.font-normal.mt-2.5x
                       GT-POPUP-MODAL.hydrated
                         #shadow-root
                           DIV.gt-popup-modal.hidden
