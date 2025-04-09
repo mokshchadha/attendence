@@ -3,7 +3,7 @@ services:
     name: attendance-marker
     runtime: docker
     plan: free
-    schedule: "30 2,13 * * 1-5"  # Runs at 10:00 AM Monday-Friday, adjust as needed
+    schedule: "30 2,13 * * 1-5"  # Runs at 8 am and 7pm IST monday to friday, adjust as needed
     region: singapore  # Choose appropriate region
     envVars:
       - key: HR_USER
