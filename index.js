@@ -16,7 +16,7 @@ host: 'smtp.gmail.com',
 
 function runTests() {
   try {
-    const output = execSync('npx playwright test').toString();
+    const output = execSync('npx playwright install && npx playwright test').toString();
     console.log({output})
     return output;
   } catch (error) {

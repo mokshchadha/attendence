@@ -179,6 +179,12 @@ BODY.ng-tns-0-1
                               FIGURE.link-icon
                                 IMG
                               SPAN.primary-title
+                        SPAN.collapsed
+                          LI
+                            A.primary-link
+                              FIGURE.link-icon
+                                IMG
+                              SPAN.primary-title
           DIV.fixed.z-10.inset-0.block.ng-star-inserted
             DIV.flex.h-screen
               DIV.fixed.inset-0.transition-opacity
@@ -291,6 +297,12 @@ BODY.ng-tns-0-1
                                     FIGURE.link-icon
                                       IMG
                                     SPAN.primary-title
+                              SPAN.collapsed
+                                LI
+                                  A.primary-link
+                                    FIGURE.link-icon
+                                      IMG
+                                    SPAN.primary-title
           DIV.container-fluid.app-container.px-0
             DIV.router-container.pb-15.container-fluid
               ROUTER-OUTLET
@@ -331,7 +343,7 @@ BODY.ng-tns-0-1
                         DIV.gt-widget-wrapper.bg-white.rounded-m.border-secondary-200.hover:shadow-lg.ng-star-inserted
                           GT-COMPONENT-LOADER
                             GT-ATTENDANCE-INFO.ng-star-inserted
-                              DIV.p-1.5x.h-18x.widget-border.bg-white
+                              DIV.p-1.5x.h-18x.widget-border.bg-primary-50
                                 DIV
                                   DIV.flex.flex-row.justify-between.ng-star-inserted
                                     DIV.flex.flex-col
@@ -378,40 +390,46 @@ BODY.ng-tns-0-1
                                         SPAN.text-sm.text-secondary-400.font-semibold.pr-2
                                         SPAN.text-xs.text-secondary-400
                                       SPAN.text-xs.text-secondary-400.w-40.break-normal
+                                  LI.mt-1x.px-1x.py-0.5x.rounded-sm.flex.items-center.justify-between.ng-star-inserted
+                                    DIV.flex.flex-col
+                                      SPAN.inline-block
+                                        SPAN.text-sm.text-secondary-400.font-semibold.pr-2
+                                        SPAN.text-xs.text-secondary-400
+                                      SPAN.text-xs.text-secondary-400.w-40.break-normal
                         DIV.gt-widget-wrapper.bg-white.rounded-m.border-secondary-200.hover:shadow-lg.ng-star-inserted
                           GT-COMPONENT-LOADER
                             GT-PAYSLIP-WIDGET.ng-star-inserted
                               DIV.p-1.5x.widget-height.ng-star-inserted
-                                HEADER.cursor-pointer.outline-none.flex.items-center.justify-between.mb-1.5x
-                                  H4.text-secondary-400.text-sm.font-semibold.my-0
-                                  SPAN.inline-block.image-gt-icon-widget.h-2.5x.w-2.5x
-                                DIV.flex.justify-between.background.mb-2x.ng-star-inserted
+                                HEADER.mb-1.5x.flex.cursor-pointer.items-center.justify-between.outline-none
+                                  H4.text-secondary-400.my-0.text-sm.font-semibold
+                                  SPAN.image-gt-icon-widget.h-2.5x.w-2.5x.inline-block
+                                DIV.background.mb-2x.flex.justify-between.ng-star-inserted
                                   GT-CHART
                                     DIV.gt-chart
                                       CANVAS
                                   DIV.mt-4x
-                                    P.text-right.text-secondary-500.text-sm.font-semibold
-                                    P.text-right.text-secondary-500.text-sm.font-semibold.mt-3x
-                                    P.text-right.text-secondary-400.text-sm.font-normal
+                                    P.text-secondary-500.text-right.text-sm.font-semibold
+                                    P.text-secondary-500.mt-3x.text-right.text-sm.font-semibold
+                                    P.text-secondary-400.text-right.text-sm.font-normal
                                 DIV.ng-star-inserted
-                                  DIV.flex.justify-between.mb-2x
+                                  DIV.mb-2x.flex.justify-between
                                     DIV.flex
-                                      DIV.w-1.h-1.5x.rounded.mr-1x
+                                      DIV.h-1.5x.mr-1x.w-1.rounded
                                       SPAN.text-secondary-500.text-xs.font-normal
                                     P.text-secondary-500.text-xs.font-semibold
                                 DIV.ng-star-inserted
-                                  DIV.flex.justify-between.mb-2x
+                                  DIV.mb-2x.flex.justify-between
                                     DIV.flex
-                                      DIV.w-1.h-1.5x.rounded.mr-1x
+                                      DIV.h-1.5x.mr-1x.w-1.rounded
                                       SPAN.text-secondary-500.text-xs.font-normal
                                     P.text-secondary-500.text-xs.font-semibold
                                 DIV.ng-star-inserted
-                                  DIV.flex.justify-between.mb-2x
+                                  DIV.mb-2x.flex.justify-between
                                     DIV.flex
-                                      DIV.w-1.h-1.5x.rounded.mr-1x
+                                      DIV.h-1.5x.mr-1x.w-1.rounded
                                       SPAN.text-secondary-500.text-xs.font-normal
                                     P.text-secondary-500.text-xs.font-semibold
-                                DIV.flex.justify-between.mt-1x
+                                DIV.mt-1x.flex.justify-between
                                   GT-BUTTON.ng-star-inserted.hydrated
                                     #shadow-root
                                       BUTTON.btn.btn-link.btn-medium
@@ -447,8 +465,14 @@ BODY.ng-tns-0-1
                                 HEADER.mb-2x
                                   H4.text-secondary-400.text-sm.font-semibold.my-0
                                 DIV.flex.items-start
-                                  SPAN.inline-block.w-3.5x.h-3.5x.mr-1x.gt_illustration_24
+                                  SPAN.inline-block.w-3.5x.h-3.5x.mr-1x.gt_illustration_32
                                   SPAN.inline-block.w-60.text-sm.text-secondary-400.font-normal
+                                DIV.flex.justify-end.mt-2x.ng-star-inserted
+                                  GT-BUTTON.hydrated
+                                    #shadow-root
+                                      BUTTON.btn.btn-secondary.btn-medium
+                                        SLOT
+                                        SLOT
                         DIV.gt-widget-wrapper.bg-white.rounded-m.border-secondary-200.hover:shadow-lg.ng-star-inserted
                           GT-COMPONENT-LOADER
                             NG-COMPONENT.ng-star-inserted
@@ -485,8 +509,8 @@ BODY.ng-tns-0-1
                                   SLOT
                         SPAN
                         DIV.body-content
-                          DIV.flex.justify-between
-                            DIV.flex.flex-col.flex-1.attendance-info
+                          DIV.flex.px-9
+                            DIV.w-1/2
                               LABEL.text-sm.leading-none.font-normal.mb-2.5x.block.text-secondary-300.ng-star-inserted
                               LABEL.text-xl.leading-none.font-semibold.signup-title.block.text-secondary-500
                               DIV
@@ -496,7 +520,7 @@ BODY.ng-tns-0-1
                                       LABEL.label-name
                                       DIV
                                         TEXTAREA#text_area.field.w-3/5.h-32.resize
-                            DIV.col-md-4.col-lg-4.attendance-info.mb-2x
+                            DIV.flex-1
                               DIV.image-attendance-info-state
                               GT-BUTTON.flex.justify-end.hydrated
                                 #shadow-root
@@ -691,9 +715,9 @@ BODY.ng-tns-0-1
                 A.text-secondary-400.hover:text-primary-400.px-0.5x.cursor-pointer.text-xs
               LI
                 A.text-secondary-400.hover:text-primary-400.px-0.5x.cursor-pointer.text-xs
-        GT-TOAST.ng-tns-c821003119-0.ng-star-inserted
-          DIV.gt-toast.max-w-2xl.ng-tns-c821003119-0.position-top.position-center
-            UL.list-unstyled.message-container.ng-tns-c821003119-0
+        GT-TOAST.ng-tns-c823047716-0.ng-star-inserted
+          DIV.gt-toast.max-w-2xl.ng-tns-c823047716-0.position-top.position-center
+            UL.list-unstyled.message-container.ng-tns-c823047716-0
   SCRIPT
   SCRIPT
   SCRIPT
