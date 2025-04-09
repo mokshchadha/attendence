@@ -2,7 +2,7 @@ services:
   - type: cron
     name: attendance-marker
     runtime: docker
-    plan: free
+    plan: starter
     schedule: "30 2,13 * * 1-5"  # Runs at 8 am and 7pm IST monday to friday, adjust as needed
     region: singapore  # Choose appropriate region
     envVars:
