@@ -29,7 +29,7 @@ async function sendEmail(testResults) {
   const mailOptions = {
     from: process.env.GOOGLE_EMAIL,
     to: process.env.GOOGLE_EMAIL,
-    subject: 'Attendance marked using cronjob',
+    subject: testResults.status + ' Attendance Status cronjob' ,
     text: testResults,
     attachments: [
       {
