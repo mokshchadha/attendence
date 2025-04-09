@@ -26,10 +26,11 @@ function runTests() {
 
 
 async function sendEmail(testResults) {
+  const status = testResults.status ?? 'Failed'
   const mailOptions = {
     from: process.env.GOOGLE_EMAIL,
     to: process.env.GOOGLE_EMAIL,
-    subject: testResults.status + ' Attendance Status cronjob' ,
+    subject: status + ' Attendance Status cronjob' ,
     text: testResults,
     attachments: [
       {
