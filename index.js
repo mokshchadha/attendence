@@ -17,16 +17,24 @@ host: 'smtp.gmail.com',
 function runTests() {
   try {
     const output = execSync('npx playwright test').toString();
-    console.log({output})
     return output;
   } catch (error) {
     return error.output.toString();
   }
 }
 
+function getStatus(testResultStr){
+  const lines = testResultStr.split("\n").filter(e=>e)
+  const lastLine = lines[lines.length - 1]
+  if(lastLine.includes('passed')){
+    return 'Passed'
+  }
+  return 'Failed'
+}
 
 async function sendEmail(testResults) {
-  const status = testResults.status ?? 'Failed'
+  const status = getStatus(testResults)
+  console.log({status})
   const mailOptions = {
     from: process.env.GOOGLE_EMAIL,
     to: process.env.GOOGLE_EMAIL,

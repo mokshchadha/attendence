@@ -343,7 +343,7 @@ BODY.ng-tns-0-1
                         DIV.gt-widget-wrapper.bg-white.rounded-m.border-secondary-200.hover:shadow-lg.ng-star-inserted
                           GT-COMPONENT-LOADER
                             GT-ATTENDANCE-INFO.ng-star-inserted
-                              DIV.p-1.5x.h-18x.widget-border.bg-white
+                              DIV.p-1.5x.h-18x.widget-border.bg-primary-50
                                 DIV
                                   DIV.flex.flex-row.justify-between.ng-star-inserted
                                     DIV.flex.flex-col
