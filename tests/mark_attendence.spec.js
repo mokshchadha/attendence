@@ -17,7 +17,7 @@ test('Open GreyTHR website, login, and find Sign Out button', async ({ page }) =
   const passwordInput = page.locator('#password');
   await passwordInput.fill(PASSWORD);
   
-  const loginButton = page.locator('xpath=/html/body/app-root/uas-portal/div/div/main/div/section/div[1]/o-auth/section/div/app-login/section/div/div/div/form/button');
+  const loginButton = page.getByRole('button', { name: 'Login' })
   await loginButton.click();
   
   await page.waitForURL('**/', { waitUntil: 'networkidle', timeout: 60000 });
