@@ -44,5 +44,5 @@ COPY . .
 # Set execution permission for run.sh
 RUN chmod +x run.sh
 
-# Command to run the script
-CMD ["node", "index.js"]
+# Command to run with random sleep
+CMD ["sh", "-c", "sleep $((RANDOM % 1800)) && node index.js"]
